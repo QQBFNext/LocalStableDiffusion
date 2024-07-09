@@ -20,9 +20,6 @@ jobs:
     - name: Install dependencies
       run: flutter pub get
 
-    - name: Build Universal APK
-      run: flutter build apk --release
-
     - name: Build Split ABI APKs
       run: flutter build apk --split-per-abi --release
 
