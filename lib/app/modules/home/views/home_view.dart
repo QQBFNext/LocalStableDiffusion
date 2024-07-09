@@ -9,18 +9,6 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Stable Diffusion',
-          style: TextStyle(
-            color: Color.fromARGB(255, 48, 3, 3),
-            letterSpacing: 2,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.teal[200],
-      ),
       body: SingleChildScrollView(
         physics: const NeverScrollableScrollPhysics(),
         child: Column(
