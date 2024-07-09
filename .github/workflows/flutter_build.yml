@@ -26,7 +26,7 @@ jobs:
     - name: Build Split ABI APKs
       run: flutter build apk --split-per-abi --release
 
-    - name: Upload APK Release - ${{ env.repository_name }}
+    - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
           path: build/app/outputs/flutter-apk/*.apk
