@@ -14,7 +14,7 @@ class HomeView extends GetView<HomeController> {
         child: Column(
           children: <Widget>[
             const SizedBox(
-              height: 20,
+              height: 40,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
