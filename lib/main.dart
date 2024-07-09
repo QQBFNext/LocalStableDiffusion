@@ -15,11 +15,20 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Stable Diffusion',
       theme: ThemeData(
+        brightness: Brightness.light,
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.green,
         ),
         useMaterial3: true,
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.green,
+        ),
+        useMaterial3: true,
+      ),
+      themeMode: ThemeMode.system,
       initialRoute: AppPages.initial,
       getPages: AppPages.routes,
     );
